@@ -1,0 +1,14 @@
+spring:
+  main:
+    web-application-type: none
+    banner-mode: off
+  application:
+    name: springboot-mcp-server
+  ai:
+    mcp:
+      server:
+        name: springboot-mcp-server
+        version: 0.0.1
+logging:
+  level:
+    root: OFF
