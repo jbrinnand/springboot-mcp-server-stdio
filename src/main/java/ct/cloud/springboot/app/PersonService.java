@@ -29,6 +29,9 @@ public class PersonService {
 
     @Tool(name = "getPersonById",  description = "Find a person by their ID")
     public Person getPersonById(Long id) {
+        if (id == null) {
+            throw new IllegalArgumentException("Argument 'id' is required and must not be null");
+        }
         log.info("Going to find person with ID: " + id);
         Person person = personStore.get(id);
         if (person == null) {
