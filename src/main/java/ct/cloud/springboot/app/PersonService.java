@@ -41,7 +41,8 @@ public class PersonService {
         return person;
     }
 
-    @Tool(name = "getAllPeople", description = "Get all people in the system")
+//    @Tool(name = "getAllPeople", description = "Get all people in the system")
+    @Tool
     public List<Person> getAllPeople() {
         return new ArrayList<>(personStore.values());
     }
